@@ -1,4 +1,5 @@
 import {Food} from './app/shared/models/food';
+import { Tag } from './app/shared/models/Tag';
 
 
 export const sample_foods: Food[] = [
@@ -6,7 +7,7 @@ export const sample_foods: Food[] = [
     id:'1',
     name: 'Pizza Pepperoni',
     cookTime: '10-20',
-    price: 10,
+    price: 400,
     favorite: false,
     origins: ['italy'],
     stars: 4.5,
@@ -16,7 +17,7 @@ export const sample_foods: Food[] = [
   {
     id:'2',
     name: 'Meatball',
-    price: 20,
+    price: 450,
     cookTime: '20-30',
     favorite: true,
     origins: ['persia', 'middle east', 'china'],
@@ -27,7 +28,7 @@ export const sample_foods: Food[] = [
   {
     id:'3',
     name: 'Hamburger',
-    price: 5,
+    price: 129,
     cookTime: '10-15',
     favorite: false,
     origins: ['germany', 'us'],
@@ -38,7 +39,7 @@ export const sample_foods: Food[] = [
   {
     id:'4',
     name: 'Fried Potatoes',
-    price: 2,
+    price: 111,
     cookTime: '15-20',
     favorite: true,
     origins: ['belgium', 'france'],
@@ -49,7 +50,7 @@ export const sample_foods: Food[] = [
   {
     id:'5',
     name: 'Chicken Soup',
-    price: 11,
+    price: 349,
     cookTime: '40-50',
     favorite: false,
     origins: ['india', 'asia'],
@@ -60,7 +61,7 @@ export const sample_foods: Food[] = [
   {
     id:'6',
     name: 'Vegetables Pizza',
-    price: 9,
+    price: 299,
     cookTime: '40-50',
     favorite: false,
     origins: ['italy'],
@@ -70,7 +71,7 @@ export const sample_foods: Food[] = [
   },
 ]
 
-export const sample_tags:any = [
+export const sample_tags:Tag[] = [
   { name: 'All', count: 6 },
   { name: 'FastFood', count: 4 },
   { name: 'Pizza', count: 2 },
