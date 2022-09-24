@@ -15,7 +15,9 @@ export class FoodPageComponent implements OnInit {
   private cartService:CartService,private router:Router) {
     activatedRoute.params.subscribe((params) => { 
       if (params.id) { 
-        this.food = foodService.getFodById(params.id);
+        foodService.getFodById(params.id).subscribe(serveFood => { 
+          this.food = serveFood;
+        });
       }
     })
    }
